@@ -18,7 +18,7 @@ var configContent = {
     },
     info: restRootUrl + "/inof",
     service: {
-      servicesfoldersList: restRootUrl + "?f=pjson",
+      servicesfoldersList: restRootUrl,
       thumbnailUrl: "/iteminfo/thumbnail/thumbnail.png?token=",
       report: serviceRootUrl + "report", // http://localhost/arcgis/admin/services/report
       start: serviceRootUrl

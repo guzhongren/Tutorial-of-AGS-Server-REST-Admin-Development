@@ -2,7 +2,8 @@ $(() => {
     $("#servicesList").on("click", () => {
         let token = getToken("token");
         let params = {
-            f: "json"
+            f: "json",
+            token: token
         };
         ajaxUtil4Get(configContent.server.service.servicesfoldersList, params, (resp) => {
             let folders = resp.folders;

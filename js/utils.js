@@ -15,7 +15,7 @@ function setToken(expires, data) {
 */
 function getToken(cookiesName) {
     var cookies = document.cookie;
-    for (var i = 0; i < cookies.length; i++) {
+    // for (var i = 0; i < cookies.length; i++) {
         var nameToken = cookies.split(';')[0];
         var name = nameToken.split('=')[0];
         if (name == cookiesName) {
@@ -23,7 +23,7 @@ function getToken(cookiesName) {
         }
         nameToken = null;
         name = null;
-    }
+    // }
     cookies = null;
 }
 /**
